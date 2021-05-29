@@ -9,14 +9,24 @@
 </head>
 <body>
 	<p class="titulo">
-		Esto es una prueba
+		Just for fun
 	</p>
 	<script>
-		var data = prompt("Ingresa tu peso")
 		var x = 5;
 		var y = 2;
+		var data = prompt("Type your favorite number");
+		var opcion = prompt("Write 1 if you want multiply by 2 \nWrite 2 if you want multiply by 10")
+		if (opcion == 1){
 		var data = (data * y);
-		document.write("Tu numero multiplicado por dos es: " + data )
+		document.write("<p class='resultado'>Your number multiply by 2 is: " + data +"</p>")
+		}
+		else if (opcion == 2){
+		var data = (data * x);
+		document.write("<p class='resultado'> Your number multiply by 5 is: " + data + "</p>")
+		}
+		else{
+			document.write('<p class= "resultado"> The number is not correct but I still love you baby </p>')
+		}
 	</script>
 </body>
 </html>

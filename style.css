@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html{
@@ -7,4 +9,25 @@ html{
     background-color: black;
     font-size: 2rem;
     color: white;
+}
+.titulo{
+    border: 2px white solid;
+    width: 8rem;
+    padding: 0.2rem;
+    text-align: center;
+    position: relative;
+    top: 1rem;
+    margin: auto;
+}
+.resultado{
+    background-color: white;
+    color: black;
+    display: flex;
+    padding: 1rem;
+    width: 20rem;
+    position: relative;
+    top: 2rem;
+    margin: auto;
+    text-align: center;
+
 }
