@@ -5,28 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./scrip.js">
 	<title>Pruebas</title>
 </head>
 <body>
-	<p class="titulo">
-		Just for fun
-	</p>
-	<script>
-		var x = 5;
-		var y = 2;
-		var data = prompt("Type your favorite number");
-		var opcion = prompt("Write 1 if you want multiply by 2 \nWrite 2 if you want multiply by 10")
-		if (opcion == 1){
-		var data = (data * y);
-		document.write("<p class='resultado'>Your number multiply by 2 is: " + data +"</p>")
-		}
-		else if (opcion == 2){
-		var data = (data * x);
-		document.write("<p class='resultado'> Your number multiply by 5 is: " + data + "</p>")
-		}
-		else{
-			document.write('<p class= "resultado"> The number is not correct but I still love you baby </p>')
-		}
-	</script>
-</body>
+	<section class="bodi">
+		<h1 class="titulo">Just for fun</h1>
+		<canvas id="canva"></canvas>
+	
+		<script src="./script.js">
+		</script>
+	</section>
+</body>	
 </html>

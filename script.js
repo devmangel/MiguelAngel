@@ -1,0 +1,20 @@
+		var ruta = window.location;
+		document.write("<p>" + ruta + "</p>");
+        var hola = document.getElementById("canva");
+        var lienzo = hola.getContext("2d");
+
+        lienzo.beginPath();
+        lienzo.strokeStyle = "white";
+        lienzo.moveTo(0, 0);
+        lienzo.lineTo(0, 10);
+        lienzo.stroke();
+        lienzo.moveTo(0, 100);
+        lienzo.lineTo(100, 100);
+        lienzo.stroke();
+        lienzo.moveTo(100, 100);
+        lienzo.lineTo(100, 0);
+        lienzo.stroke();
+        lienzo.moveTo(100, 0);
+        lienzo.lineTo(0, 0);
+        lienzo.stroke();
+        lienzo.closePath();
