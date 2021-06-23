@@ -6,15 +6,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./scrip.js">
-	<title>Pruebas</title>
+	<link rel="shortcut icon" type="image/jpg" href="./images/favicon.jpg">
+	<title>Devmangel</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-	<section class="bodi">
-		<h1 class="titulo">Just for fun</h1>
-		<canvas id="canva"></canvas>
-	
-		<script src="./script.js">
-		</script>
-	</section>
-</body>	
+	<header class="header">
+		<div class="logo-container">
+			<img class="header__logo" src="./images/favicon.jpg" alt="mi logo">
+		</div>
+		<nav class="header__menu">
+			<div class="header__menu-container">
+				<h4 class="menu__text">Menu</h4>
+				<span class="menu__icon"></span>
+			</div>
+			<div>
+				<ul class="header-list">
+					<li><a class="list-item" href="/">Mis proyectos</a></li>
+					<li><a class="list-item" href="/">Mi historia</a></li>
+					<li><a class="list-item" href="/">Contacto</a></li>
+					</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container-search">
+			<h3 class="tittle-search">Buscar información</h3>
+			<input class="search" type="text" placeholder="Buscar ..." autocomplete="name">
+		</div>
+	</main>
+</body>
 </html>
