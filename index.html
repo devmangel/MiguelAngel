@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./scrip.js">
 	<link rel="shortcut icon" type="image/jpg" href="./images/favicon.jpg">
 	<title>Devmangel</title>
@@ -14,28 +14,35 @@
 </head>
 <body>
 	<header class="header">
-		<div class="logo-container">
-			<img class="header__logo" src="./images/favicon.jpg" alt="mi logo">
+		<div class="header__menu">
+			<div class="prueba">
+				<ul class="list__container">
+					<li><a class="list-item" href="/">My projects</a></li>
+					<li><a class="list-item" href="/">About me</a></li>
+					<li><a class="list-item" href="/">Get in touch</a></li>
+				</ul>
+			</div>
+			<div class="icon__container">
+				<img src="./images/icons8-menu-24.png" class="icon" height="30px" width="50px"></img>
+			</div>
 		</div>
-		<nav class="header__menu">
-			<div class="header__menu-container">
-				<h4 class="menu__text">Menu</h4>
-				<span class="menu__icon"></span>
-			</div>
-			<div>
-				<ul class="header-list">
-					<li><a class="list-item" href="/">Mis proyectos</a></li>
-					<li><a class="list-item" href="/">Mi historia</a></li>
-					<li><a class="list-item" href="/">Contacto</a></li>
-					</ul>
-			</div>
-		</nav>
 	</header>
 	<main>
 		<div class="container-search">
-			<h3 class="tittle-search">Buscar información</h3>
-			<input class="search" type="text" placeholder="Buscar ..." autocomplete="name">
+			<h3 class="tittle-search">Search projects</h3>
+			<input class="search" type="text" placeholder="Search ..." autocomplete="name">
 		</div>
 	</main>
+	<section class="carousel">
+		<div class="carousel__container">
+			<div class="carousel__pic1 pics"></div>
+			<div class="carousel__pic2 pics"></div>
+			<div class="carousel__pic3 pics"></div>
+			<div class="carousel__pic4 pics"></div>
+			<div class="carousel__pic5 pics"></div>
+			<div class="carousel__pic6 pics"></div>
+			<div class="carousel__pic7 pics"></div>
+		</div>
+	</section>
 </body>
 </html>
