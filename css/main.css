@@ -20,42 +20,35 @@ body {
   background: url(../../images/pic1.jpg) no-repeat center;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 .carousel__pic2 {
   background: url(../../images/pic2.jpg) no-repeat center;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 .carousel__pic3 {
   background: url(../../images/pic3.jpg) no-repeat center;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 .carousel__pic4 {
   background: url(../../images/pic4.jpg) no-repeat center;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 .carousel__pic5 {
   background: url(../../images/pic5.jpg) no-repeat center;
   background-size: cover;
   background-position: center;
-}
-
-.carousel__pic6 {
-  background: url(../../images/pic6.jpg) no-repeat center;
-  background-size: cover;
-  background-position: center;
-}
-
-.carousel__pic7 {
-  background: url(../../images/pic7.jpg) no-repeat center;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
 }
 
 .header {
@@ -145,7 +138,7 @@ body {
   justify-content: center;
   width: 100%;
   height: auto;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   padding-left: 30px;
   position: relative;
@@ -168,6 +161,27 @@ body {
   display: inline-block;
   cursor: pointer;
   background-size: cover;
+  position: relative;
+}
+
+.carousel .pics .detail {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.3) 100%);
+  font-size: 10px;
+  transition: 450ms opacity;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+.carousel .pics .detail .detail__icon {
+  height: 50%;
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .carousel .pics:hover ~ .pics {
@@ -183,6 +197,26 @@ body {
   opacity: 1;
   transition: 450ms all;
   transform-origin: center;
+}
+
+.carousel .carousel__pic1:hover .detail {
+  display: block;
+}
+
+.carousel .carousel__pic2:hover .detail {
+  display: block;
+}
+
+.carousel .carousel__pic3:hover .detail {
+  display: block;
+}
+
+.carousel .carousel__pic4:hover .detail {
+  display: block;
+}
+
+.carousel .carousel__pic5:hover .detail {
+  display: block;
 }
 
 .add {

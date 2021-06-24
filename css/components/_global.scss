@@ -1,11 +1,9 @@
-$pics: (
+$pics:(
 pic1: url(../../images/pic1.jpg),
 pic2: url(../../images/pic2.jpg),
 pic3: url(../../images/pic3.jpg),
 pic4: url(../../images/pic4.jpg),
-pic5: url(../../images/pic5.jpg),
-pic6: url(../../images/pic6.jpg),
-pic7: url(../../images/pic7.jpg)
+pic5: url(../../images/pic5.jpg)
 );
 
 *{
@@ -30,5 +28,6 @@ body{
         background: $pic no-repeat center;
         background-size: cover;
         background-position: center;
+        object-fit: cover;
     }
 }
