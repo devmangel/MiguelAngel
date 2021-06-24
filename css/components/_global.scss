@@ -16,15 +16,19 @@ pic7: url(../../images/pic7.jpg)
 
 html{
     font-size: 62.5%;
-    background-color: #000000;
     font-size: 1.6rem;
     color: white;
     font-family:'Work Sans', sans-serif;
+}
+body{
+    background: url(../../images/video.gif);
+    opacity: .99 black;
 }
 
 @each $name, $pic in $pics{
     .carousel__#{$name}{
         background: $pic no-repeat center;
         background-size: cover;
+        background-position: center;
     }
 }
