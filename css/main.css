@@ -6,14 +6,18 @@
 
 html {
   font-size: 62.5%;
-  font-size: 1.6rem;
   color: white;
   font-family: 'Work Sans', sans-serif;
 }
 
 body {
-  background: url(../../images/video.gif);
-  opacity: .99 black;
+  background: url(../../images/background.png);
+  background-color: black;
+  font-size: 1.6rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carousel__pic1 {
@@ -52,13 +56,13 @@ body {
 }
 
 .header {
-  height: 100px;
+  height: 10vh;
+  margin-top: 40px;
 }
 
 .header__menu {
   width: 100%;
   margin-right: 50px;
-  margin-top: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -80,6 +84,7 @@ body {
   color: white;
   text-decoration: none;
   margin-right: 50px;
+  font-size: 2.5rem;
 }
 
 .header__menu .icon__container {
@@ -102,35 +107,166 @@ body {
   border-bottom: white 2px solid;
 }
 
-.container-search {
+.origin {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.origin .login {
+  background-color: rgba(173, 149, 149, 0.4);
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  padding: 40px 30px;
+  width: 40%;
+  min-height: 400px;
+}
+
+.origin .login__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.origin .login__container h2 {
+  margin-bottom: 40px;
+  font-size: 4rem;
+}
+
+.origin .login__container .login__container--form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-top: 40px;
+  width: 100%;
 }
 
-.tittle-search {
-  font-weight: 400;
-  line-height: 1rem;
-  margin: 20px auto;
-  width: 40%;
-}
-
-.search {
-  width: 60%;
-  align-self: center;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: #58555A;
+.origin .login__container .login__container--form .input {
+  border-radius: 15px;
+  margin: 0 auto 15px;
+  height: 35px;
+  background-color: rgba(4, 17, 89, 0.7);
+  border: solid #041159 1px;
   color: white;
-  border: 5px solid white;
   outline: none;
+  font-size: 1.6rem;
+  width: 80%;
+  text-align: center;
 }
 
-::placeholder {
+.origin .login__container .login__container--form .button {
+  background-color: rgba(4, 17, 89, 0.5);
   color: white;
-  font-size: .8rem;
+  width: 30%;
+  margin: 0 auto;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.origin .login__container .login__container--form .login__container--remember-me {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.origin .login__container .login__container--form .login__container--remember-me label {
+  margin-left: 20%;
+}
+
+.origin .login__container .login__container--form .login__container--remember-me label input {
+  margin-right: 10px;
+}
+
+.origin .login__container .login__container--form .login__container--remember-me a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20%;
+}
+
+.origin .login__container .login__container--form .login__container--remember-me a:hover {
+  text-decoration: underline;
+}
+
+.origin .login__container .login__container--social-media > div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.origin .login__container .login__container--register {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.origin .login__container .login__container--register a {
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.button:hover {
+  background-color: #010626;
+}
+
+.bar-search {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(4, 17, 89, 0.8);
+  border: 2px white solid;
+}
+
+.bar-search .container-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 40%;
+  margin: 0 auto;
+}
+
+.bar-search .container-tittle .tittle-search {
+  font-size: 2.5rem;
+}
+
+.bar-search .container-search {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 40%;
+  margin: 0 auto;
+}
+
+.bar-search .container-search .search {
+  width: 80%;
+  height: 70%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  outline: none;
+  background-image: url("https://img.pngio.com/halo-saga-ring-world-png-by-albertweskerg-on-deviantart-halo-ring-png-256_256.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+  background-size: 40px;
+}
+
+.search::placeholder {
+  color: #041159;
+  font-size: 1.8rem;
 }
 
 .carousel {
@@ -219,7 +355,19 @@ body {
   display: block;
 }
 
-.add {
-  height: 500px;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: rgba(1, 6, 38, 0.5);
+  padding: 20px;
+}
+
+.footer a {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=main.css.map */

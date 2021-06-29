@@ -1,28 +1,52 @@
-.container-search{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.bar-search{
     text-align: center;
-    margin-top: 40px;
-}
-.tittle-search{
-    font-weight: 400;
-    line-height: 1rem;
-    margin: 20px auto;
-    width: 40%;
-}
-.search{
-    width: 60%;
-    align-self: center;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #58555A;
-    color: white;
-    border: 5px solid white;
-    outline: none;
+    width: 100%;
+    height: 200px;
+    background-color: rgba( #041159, $alpha: .8);
+    border: 2px white solid;
+
+    .container-tittle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 40%;
+        margin: 0 auto;
+
+        .tittle-search{
+            font-size: 2.5rem;
+        }
+    }
+
+    .container-search{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: 40%;
+        margin: 0 auto;
+
+        .search{
+            width: 80%;
+            height: 70%;
+            text-align: center;
+            border-radius: 15px;
+            font-size: 1.6rem;
+            outline: none;
+            background-image: url("https://img.pngio.com/halo-saga-ring-world-png-by-albertweskerg-on-deviantart-halo-ring-png-256_256.png");
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-position-y: center;
+            background-size: 40px;
+        }
+    }
 }
 
-::placeholder{
-    color: white;
-    font-size: .8rem;
+
+
+
+
+
+.search::placeholder{
+    color: #041159;
+    font-size: 1.8rem;
 }

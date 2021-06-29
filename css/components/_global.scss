@@ -14,13 +14,18 @@ pic5: url(../../images/pic5.jpg)
 
 html{
     font-size: 62.5%;
-    font-size: 1.6rem;
     color: white;
     font-family:'Work Sans', sans-serif;
 }
 body{
-    background: url(../../images/video.gif);
-    opacity: .99 black;
+    background: url(../../images/background.png);
+    background-color: rgba( #000000, 1);
+    font-size: 1.6rem;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @each $name, $pic in $pics{
