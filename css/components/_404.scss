@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+
+
+    .header{
+        height: 20vh;
+    }
+
+    .error-404{
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container{
+            border-radius: 15px;
+            width: 60%;
+            height: 90%;
+            text-align: center;
+            background: rgba(#041159, $alpha: .5);
+            
+            img{
+                border: solid red 1px;
+                position: absolute;
+                left: -150px;
+            }
+
+            h3 {
+            font-size: 10rem;
+            font-family: 'halo';
+            }
+
+            p{
+                font-size: 2.5rem;
+            }
+    }
+    }
+
+    .footer{
+        height: 20vh;
+    }
+
+}

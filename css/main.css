@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: 'halo';
+  src: url(../../font-halo/Outline.ttf);
+}
+
 html {
   font-size: 62.5%;
   color: white;
@@ -57,7 +62,7 @@ body {
 
 .header {
   height: 10vh;
-  margin-top: 40px;
+  padding-top: 30px;
 }
 
 .header__menu {
@@ -113,10 +118,11 @@ body {
   height: auto;
   margin-bottom: 100px;
   width: 100%;
+  padding-top: 50px;
 }
 
 .origin .login {
-  background-color: rgba(173, 149, 149, 0.4);
+  background-color: rgba(173, 149, 149, 0.2);
   border: 2px solid white;
   border-radius: 40px;
   color: white;
@@ -226,8 +232,7 @@ input::placeholder {
   text-align: center;
   width: 100%;
   height: 200px;
-  background-color: rgba(4, 17, 89, 0.4);
-  border: 2px white solid;
+  background-color: rgba(4, 17, 89, 0.5);
 }
 
 .bar-search .container-tittle {
@@ -246,13 +251,13 @@ input::placeholder {
 .bar-search .container-search {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 70%;
   height: 40%;
   margin: 0 auto;
 }
 
 .bar-search .container-search .search {
-  width: 100%;
+  width: 80%;
   height: 70%;
   text-align: center;
   border-radius: 15px;
@@ -359,7 +364,6 @@ input::placeholder {
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
   height: auto;
   background-color: rgba(1, 6, 38, 0.5);
@@ -369,6 +373,12 @@ input::placeholder {
 .footer a {
   color: white;
   text-align: center;
-  margin-bottom: 15px;
+  text-decoration: none;
+  width: 150px;
+  margin: 10px auto;
+}
+
+a:hover {
+  border-bottom: white 2px solid;
 }
 /*# sourceMappingURL=main.css.map */

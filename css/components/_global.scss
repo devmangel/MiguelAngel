@@ -12,6 +12,11 @@ pic5: url(../../images/pic5.jpg)
     margin: 0;
 }
 
+@font-face {
+    font-family: 'halo';
+    src: url(../../font-halo/Outline.ttf);
+}
+
 html{
     font-size: 62.5%;
     color: white;

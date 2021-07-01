@@ -1,6 +1,6 @@
 .header{
     height: 10vh;
-    margin-top: 40px;
+    padding-top: 30px;
 
     &__menu {
         width: 100%;
@@ -45,7 +45,7 @@
     }
 }
 .header__menu:hover .prueba, .prueba:hover{
-    display: block;  
+    display: block;
 }
 .list-item:hover{
     border-bottom: white 2px solid;
