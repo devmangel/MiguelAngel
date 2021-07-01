@@ -3,6 +3,7 @@
         justify-content: center;
         height: auto;
         margin-bottom: 100px;
+        width: 100%;
     
     .login {
         background-color: rgba(173, 149, 149, 0.4);
@@ -10,7 +11,7 @@
         border-radius: 40px;
         color:  white;
         padding: 40px 30px;
-        width: 40%; 
+        width: 50%; 
         min-height: 400px;
 
         &__container {
@@ -105,13 +106,14 @@
     }
 }
 
+.button:hover{
+    border: #010626 solid 5px;
+}
+
 input::placeholder{
 
  color: white;
  text-align: center;
  font-size: 1.6rem;
 
-}
-.button:hover{
-    background-color: #010626;
 }

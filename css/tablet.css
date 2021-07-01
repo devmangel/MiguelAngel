@@ -1,0 +1,20 @@
+.header__menu .prueba .list-item{
+    font-size: 1.6rem;
+}
+
+.origin .login {
+    width: 70%;
+}
+.origin .login__container .login__container--form .login__container--remember-me {
+    margin: 20px 5px;
+    font-size: 1.3rem;
+  }
+  .carousel__container{
+      overflow-x: scroll;
+  }
+  .carousel .carousel__container:hover .pics:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    transition: 450ms all;
+    transform-origin: center;
+  }

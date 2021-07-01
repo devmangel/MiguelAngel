@@ -1,0 +1,25 @@
+.header__menu .icon__container {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 7%;
+  }
+
+
+  .header__menu .prueba .list-item {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+
+  .origin .login__container h2 {
+    margin-bottom: 40px;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .origin .login__container .login__container--form .button {
+    width: 50%;
+    font-size: 1.5rem;
+  }
