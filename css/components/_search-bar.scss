@@ -3,6 +3,8 @@
     width: 100%;
     height: 200px;
     background-color: rgba( #041159, $alpha: .5);
+    border: #041159 solid 1px;
+    box-shadow: 1px 1px 20px 1px #041159;
 
     .container-tittle{
         display: flex;

@@ -1,25 +1,74 @@
+.header__menu {
+  width: 100%;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+}
+
 .header__menu .icon__container {
     margin-right: 30px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: 7%;
+    width: 10%;
+  }
+  .header__menu .prueba {
+    width: 90%;
+  }
+  
+  .header__menu .prueba .list__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
-
   .header__menu .prueba .list-item {
-    color: white;
-    text-decoration: none;
     margin-right: 10px;
     font-size: 1.5rem;
   }
 
+  .origin .login{
+    width: 90%;
+  }
+
   .origin .login__container h2 {
     margin-bottom: 40px;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
   }
   .origin .login__container .login__container--form .button {
     width: 50%;
     font-size: 1.5rem;
   }
+
+  .origin .login__container .login__container--form .login__container--remember-me{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 30px;
+  }
+
+.origin .login__container .login__container--form .login__container--remember-me label{
+
+    margin-left: 0px;
+}
+.origin .login__container .login__container--form .login__container--remember-me label input {
+  margin-right: 5px;
+}
+
+.origin .login__container .login__container--form .login__container--remember-me a {
+  
+  margin-right: 0px;
+}
+
+.bar-search .container-search {
+
+  width: 100%;
+}
+.bar-search .container-search .search {
+
+  width: 90%;
+}
