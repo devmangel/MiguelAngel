@@ -17,6 +17,7 @@
 .list__container{
     display: flex;
     justify-content: flex-end;
+    align-content: space-between;
     list-style: none;
     }
 
@@ -35,7 +36,6 @@
             display: flex;
             align-items: center;
             cursor: pointer;
-            width: 10%;
 
             .icon{
                 background-position: center;

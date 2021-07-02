@@ -7,6 +7,7 @@
 @font-face {
   font-family: 'halo';
   src: url(../../font-halo/Outline.ttf);
+  font-display: swap;
 }
 
 html {
@@ -16,9 +17,7 @@ html {
 }
 
 body {
-  background: url(../../images/background.png);
   background-color: black;
-  font-size: 1.6rem;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,6 +81,7 @@ body {
 .header__menu .prueba .list__container {
   display: flex;
   justify-content: flex-end;
+  align-content: space-between;
   list-style: none;
 }
 
@@ -97,7 +97,6 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
-  width: 10%;
 }
 
 .header__menu .icon__container .icon {
@@ -105,8 +104,7 @@ body {
 }
 
 .header__menu:hover .prueba, .prueba:hover {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .list-item:hover {

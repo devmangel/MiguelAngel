@@ -7,14 +7,13 @@
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/tablet.css" media="only screen and (max-width: 900px)">
 	<link rel="stylesheet" href="./css/mobile.css" media="only screen and (max-width: 615px)">
-	<link rel="stylesheet" href="./scrip.js">
 	<link rel="shortcut icon" type="image/jpg" href="./images/favicon.jpg">
 	<title>Devmangel</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="preload" as="font">
 </head>
-<body>
+<body background="./images/background.png">
 	<header class="header">
 		<div class="header__menu">
 			<div class="prueba">
@@ -25,7 +24,7 @@
 				</ul>
 			</div>
 			<div class="icon__container">
-				<img src="./images/icons8-menu-24.png" class="icon" height="30px" width="50px"></img>
+				<img src="./images/icons8-menu-24.png" class="icon" height="48px" width="40px" alt="menu de opciones"></img>
 			</div>
 		</div>
 	</header>
@@ -34,7 +33,7 @@
 				<section class="login__container">
 					<h2>Sign up today</h2>
 					<form class="login__container--form">
-						<input class="input" type="text" placeholder="Email" autocomplete="email">
+						<input class="input" type="email" placeholder="Email" autocomplete="email">
 						<input class="input" type="password" placeholder="Password" autocomplete="new-password">
 						<button class="button">Register</button>
 						<div class="login__container--remember-me">
@@ -45,8 +44,8 @@
 						</div>
 					</form>
 					<section class="login__container--social-media">
-						<div><img src="./images/google-icon.png" alt="Google">Sign up with Google</div>
-						<div><img src="./images/twitter-icon.png" alt="Twitter">Sign up with Twitter</div>
+						<div><img src="./images/google-icon.png" alt="Google" height="40px" width="40px">Sign up with Google</div>
+						<div><img src="./images/twitter-icon.png" alt="Twitter" height="40px" width="40px">Sign up with Twitter</div>
 					</section>
 					<p class="login__container--register">Already register? <a href="">Login</a></p>
 				</section>
